@@ -1,0 +1,49 @@
+@import "../../styled/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all .2s;
+  background-color: var(--background);
+  position: relative;
+
+  .bgDivider {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    background-color: var(--top-bg-pattern);
+    z-index: 0;
+  }
+
+  .containerLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+    margin: 0 150px;
+    padding: 20px 0;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+.light {
+  --background: var(--white);
+  --top-bg-pattern: var(--top-bg-pattern-light);
+  --switch: var(--switch-light);
+  --color-text-primary: var(--color-text-primary-light);
+  --color-text-secondary: var(--color-text-secondary-light);
+  --card-background: var(--card-background-light);
+}
+
+.dark {
+  --background: var(--background-dark);
+  --top-bg-pattern: var(--top-bg-pattern-dark);
+  --switch: var(--switch-dark);
+  --color-text-primary: var(--color-text-primary-dark);
+  --color-text-secondary: var(--color-text-secondary-dark);
+  --card-background: var(--card-background-dark);
+}
